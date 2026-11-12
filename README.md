@@ -24,11 +24,6 @@ App web que usa el pipeline entrenado en el corte 2 (imputación por mediana + e
 | `models/pipeline_diabetes.joblib` | Pipeline completo serializado |
 | `models/metricas.json`, `models/registros_prueba.csv` | Métricas y registros de prueba para verificar app vs. notebook |
 
-## Cómo reproducir
-1. Colocar `pima-indians-diabetes.csv` en la raíz.
-2. Ejecutar el notebook completo (o `python entrenar_modelo.py`) → genera la carpeta `models/`.
-3. `pip install -r requirements.txt` y `streamlit run app.py`.
-4. **Importante:** la versión de `scikit-learn` de `requirements.txt` debe ser la misma con la que se guardó el modelo (el notebook la imprime al final).
 
 ## Publicación
 Subir todo a un repositorio público de GitHub → share.streamlit.io → *New app* → repositorio, rama `main`, archivo `app.py`.
