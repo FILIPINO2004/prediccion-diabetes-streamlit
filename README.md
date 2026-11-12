@@ -24,10 +24,6 @@ App web que usa el pipeline entrenado en el corte 2 (imputación por mediana + e
 | `models/pipeline_diabetes.joblib` | Pipeline completo serializado |
 | `models/metricas.json`, `models/registros_prueba.csv` | Métricas y registros de prueba para verificar app vs. notebook |
 
-
-## Publicación
-Subir todo a un repositorio público de GitHub → share.streamlit.io → *New app* → repositorio, rama `main`, archivo `app.py`.
-
 ## Pruebas de funcionamiento
 - Caso normal: valores por defecto del formulario.
 - Entrada inválida: p. ej. Glucosa = 500 (el formulario bloquea el rango y `validar_registro` lo rechaza).
