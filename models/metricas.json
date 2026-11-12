@@ -1,0 +1,95 @@
+{
+  "modelo_final": "Bosque aleatorio (balanceado)",
+  "hiperparametros": {
+    "modelo__max_depth": 4,
+    "modelo__min_samples_leaf": 10
+  },
+  "umbral": 0.39,
+  "sklearn_version": "1.6.1",
+  "n_total": 768,
+  "n_train": 614,
+  "n_test": 154,
+  "pct_diabetes": 34.9,
+  "test_final": {
+    "Accuracy": 0.6948,
+    "Precisión": 0.5412,
+    "Recall": 0.8519,
+    "F1": 0.6619,
+    "F2": 0.7641,
+    "ROC-AUC": 0.8128,
+    "VP": 46,
+    "FP": 39,
+    "FN": 8,
+    "VN": 61
+  },
+  "test_corte2": {
+    "Accuracy": 0.7338,
+    "Precisión": 0.6032,
+    "Recall": 0.7037,
+    "F1": 0.6496,
+    "F2": 0.681,
+    "ROC-AUC": 0.8126,
+    "VP": 38,
+    "FP": 25,
+    "FN": 16,
+    "VN": 75
+  },
+  "cv_final": {
+    "F2": 0.7368,
+    "Recall": 0.7617,
+    "Precisión": 0.6539,
+    "F1": 0.7029,
+    "ROC-AUC": 0.84
+  },
+  "revision": {
+    "recall_con_diabetes": 0.8519,
+    "recall_sin_diabetes": 0.61,
+    "f1_entrenamiento": 0.7239,
+    "f1_prueba": 0.6619,
+    "brecha_f1": 0.0621,
+    "cv_recall_media": 0.8832,
+    "cv_recall_desv": 0.0208,
+    "cv_f1_media": 0.6783,
+    "cv_f1_desv": 0.0292,
+    "corr_max": 0.648,
+    "corr_max_par": "SkinThickness - BMI"
+  },
+  "comparacion_test": {
+    "Corte 2: reg. logística balanceada (umbral 0.5)": {
+      "Accuracy": 0.7338,
+      "Precisión": 0.6032,
+      "Recall": 0.7037,
+      "F1": 0.6496,
+      "F2": 0.681,
+      "ROC-AUC": 0.8126,
+      "VP": 38,
+      "FP": 25,
+      "FN": 16,
+      "VN": 75
+    },
+    "Corte 3: Bosque aleatorio (balanceado) (umbral 0.5)": {
+      "Accuracy": 0.7208,
+      "Precisión": 0.5797,
+      "Recall": 0.7407,
+      "F1": 0.6504,
+      "F2": 0.7018,
+      "ROC-AUC": 0.8128,
+      "VP": 40,
+      "FP": 29,
+      "FN": 14,
+      "VN": 71
+    },
+    "Corte 3: Bosque aleatorio (balanceado) (umbral 0.39)": {
+      "Accuracy": 0.6948,
+      "Precisión": 0.5412,
+      "Recall": 0.8519,
+      "F1": 0.6619,
+      "F2": 0.7641,
+      "ROC-AUC": 0.8128,
+      "VP": 46,
+      "FP": 39,
+      "FN": 8,
+      "VN": 61
+    }
+  }
+}
